@@ -1,0 +1,34 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Austin, Texas{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="col-sm-6-md-6-lg-4">
+  <h1>Austin, Texas</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
+  <h2>Restaurants</h2>
+  <p>The delicious food of Austin.</p>
+  <div class="row">
+    {% for restaurants in restaurant.restaurants %}
+      <div class="col-sm-6-md-6-lg-4">
+        <img src="img/{{ restaurants.image }}.jpg" alt="" class="img-fluid">
+        <h3><a href="restaurants/{{ restaurants.image }}.html">{{ restaurants.name }}</a></h3>
+      </div>
+    {% endfor %}
+  </div>
+  <h2>Landmarks</h2>
+  <p>The landmarks of Austin, Texas.</p>
+  <hr>
+   <div class="col-sm-6-md-6-lg-4">
+  {% for landmarks in austin.landmarks %}
+    <h3><a href="{{ landmarks.url }}" target="_blank">{{ landmarks.name }}</a></h3>
+    <p>{{ landmarks.address}}, {{ landmarks.city }}, {{ landmarks.state }} {{ landmarks.zip }}</p>
+    <hr>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

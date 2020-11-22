@@ -1,0 +1,21 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>Restaurants of Austin</h1>
+  <div class="row">
+    {% for restaurants in restaurant.restaurants %}
+   <div class="col-sm-6 col-lg-4">
+     <div class="card text-white bg-dark mb-4">
+      <div class="card-body">
+        <h5 class="card-title">{{ restaurants.name }}</h5>
+        <h6>{{ restaurants.category }}</h6>
+        <p class="card-text">{{ restaurants.address }}</p>
+      </div>
+     </div>
+    </div>
+   {% endfor %}
+   </div>
+
+</article>
+{% endblock %}
