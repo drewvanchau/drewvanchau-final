@@ -30,11 +30,11 @@
       "path": "books"
     },
     {
-      "template": "bake-austin",
+      "template": "bake-landmarks",
       "data": "austin",
       "array": "landmarks",
       "slug": "slug",
-      "path": "austin"
+      "path": "landmarks"
     }
   ]
 }
