@@ -8,29 +8,30 @@
 <div class="container">
     
   <h1>Austin, Texas</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2><a href="restaurants.html">Restaurants</a></h2>
-  <p>The delicious food of Austin.</p>
-  <div class="row">
-    {% for restaurants in restaurant.restaurants %}
-  <div class="col-sm-6 col-lg-4">
-        <img src="img/img-austin/restaurants/{{ restaurants.image }}" alt="" class="img-fluid">
-        <h3>{{ restaurants.name }}</h3>
-      </div>
-    {% endfor %}
-  </div>
-  <h2>Landmarks</h2>
-  <p>The landmarks of Austin, Texas.</p>
-  <hr>
-  <div class="row">
-  {% for landmark in austin.landmarks %}
-   <div class="col-sm-6 col-md-6 col-lg-4">
-    <img src="img/img-austin/landmarks/{{ landmark.image }}" alt="" class="img-fluid">
-    <h3><a href="landmarks/{{ landmark.slug }}.html" target="_blank">{{ landmark.name }}</a></h3>
-    <hr>
-    </div>
-  {% endfor %}
-  </div>
-  </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
+      <h2><a href="restaurants.html">Restaurants</a></h2>
+       <p>The delicious food of Austin.</p>
+          <div class="row">
+            {% for restaurants in restaurant.restaurants %}
+               <div class="col-sm-6 col-lg-4">
+                <img src="img/img-austin/restaurants/{{ restaurants.image }}" alt="" class="img-fluid">
+                <h3>{{ restaurants.name }}</h3>
+              </div>
+            {% endfor %}
+          </div>
+      <h2>Landmarks</h2>
+       <p>The landmarks of Austin, Texas.</p>
+        <hr>
+          <div class="row">
+            {% for landmark in austin.landmarks %}
+              <div class="col-sm-6 col-md-6 col-lg-4">
+               <img src="img/img-austin/landmarks/{{ landmark.image }}" alt="" class="img-fluid">
+               <h3><a href="landmarks/{{ landmark.slug }}.html" target="_blank">{{ landmark.name }}</a></h3>
+              </div>
+         <hr>
+             
+            {% endfor %}
+           </div>
+         </div>
 </div>
 {% endblock %}
