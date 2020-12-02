@@ -71,6 +71,24 @@
       "address": "2400 E Oltorf St #1A, Austin, TX 78741",
       "category": "Pan-Asian",
       "image": "888.jpg"
+    },
+    {
+      "name": "Tapioca House",
+      "Address": "1906 Guadalupe St, Austin, TX 78705",
+      "category": "Taiwanese",
+      "image": "tap-house.jpg"
+    },
+    {
+      "name": "Pluckers Wing Stop",
+      "address": "2222 Rio Grande, Austin, TX 78705",
+      "category": "American",
+      "image": "pluckers.jpg"
+    },
+    {
+      "name": "Halal Bros",
+      "address": "2712 Guadalupe St, Austin, TX 78705",
+      "category": "Arabic",
+      "image": "halal.jpg"
     }
   ]
 }
